@@ -71,7 +71,7 @@ const registrar = async() =>{
             correo : _correo,
             estado : _estado
         }
-
+          console.log(proveedor)
         fetch(url,{
             method: 'POST',
             mode : 'cors',
@@ -80,15 +80,15 @@ const registrar = async() =>{
         })
         .then((resp)=> resp.json())
         .then(json => {
-            Swal.fire({
-                icon: 'success',
-                title: 'El proveedor ha sido creado exitosamente',
-                showConfirmButton: false,
-                timer: 1500
-              });
-            setTimeout(() =>{
-                window.location.href = 'listarProveedor.html';
-            },1000);  
+            // Swal.fire({
+            //     icon: 'success',
+            //     title: 'El proveedor ha sido creado exitosamente',
+            //     showConfirmButton: false,
+            //     timer: 1500
+            //   });
+            // setTimeout(() =>{
+            //     window.location.href = 'listarProveedor.html';
+            // },1000);  
         })
     }
 }

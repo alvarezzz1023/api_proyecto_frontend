@@ -181,15 +181,15 @@ const listarDatos= async()=>{
         })
         .then((resp)=> resp.json())
         .then(json => {
-            // Swal.fire({
-            //     icon: 'info',
-            //     title: 'El Empleado ha sido modificado exitosamente',
-            //     showConfirmButton: false,
-            //     timer: 1500
-            //   });
-            // setTimeout(() =>{
-            //     window.location.href = 'listarUsuario.html';
-            // },1000);
+            Swal.fire({
+                icon: 'info',
+                title: 'El Empleado ha sido modificado exitosamente',
+                showConfirmButton: false,
+                timer: 1500
+              });
+            setTimeout(() =>{
+                window.location.href = 'listarUsuario.html';
+            },1000);
         })
         }}
     

@@ -241,7 +241,7 @@ const ActualizarRegistro = async() =>{
             observaciones : _observaciones,
             estado : _estado
         }
-
+        console.log(compra)
         fetch(url,{
             method: 'PUT',
             mode : 'cors',
